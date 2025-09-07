@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Angora Barber Shop </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="decoration decoration-1">✂</div>
+    <div class="decoration decoration-2">💈</div>
+    <div class="decoration decoration-3">🧔</div>
+    <div class="decoration decoration-4">✨</div>
+    
+    <header>
+        <h1 class="logo">ANGORA BARBER SHOP</h1>
+        <p class="subtitle">2018'den beri </p>
+    </header>
+
+    <div class="services">
+        <div class="service-card animated">
+            <h2 class="service-title">SAKAL TRAŞI</h2>
+            <p>Sakalınız sizin imzanızdır. Profesyonel ustalarımızla, sakalınıza hak ettiği özeni gösteriyoruz.
+Her çizgi, her köşe, her detay tam yerinde…
+
+✨ Ne Sunuyoruz?
+
+Keskin ve simetrik sakal hatları
+
+Rahatlatıcı klasik berber deneyimi
+
+Yüzünüze özel bakım ve stil önerileri
+
+Gelin, sakalınıza hayat verelim.
+Çünkü iyi bir sakal, iyi bir izlenim bırakır.</p>
+        </div>
+
+        <div class="service-card animated">
+            <h2 class="service-title">SAÇ KESİMİ</h2>
+            <p>Saçınız, tarzınızın en güçlü ifadesidir. Profesyonel berberlerimizle, size en uygun kesimi buluyor ve her teli mükemmel bir şekilde şekillendiriyoruz.
+
+✨ Bizimle Neler Mümkün?
+
+Modern ve klasik saç kesimleri
+
+Yüz hatlarınıza özel stil önerileri
+
+Rahatlatıcı berber deneyimi
+
+Gelin, saçınızı konuşturalım!
+Çünkü iyi bir saç kesimi, kendinizi her gün özel hissettirir.</p>
+        </div>
+
+        <div class="service-card animated">
+            <h2 class="service-title">ONLINE RANDEVU</h2>
+            <p>Artık sıra beklemek yok…
+Çünkü Angora Berber'de saç ve sakal bakımınız için online randevu alabilirsiniz.
+Koltuğunuz hazır, ustamız sizi bekliyor.
+
+Bir tıkla yerinizi ayırın, beklemeden keyifli bir tıraş deneyimi yaşayın.
+
+Bart Berber — Tarzınıza zamanında dokunan berberiniz.</p>
+            <button class="toggle-btn" onclick="toggleAppointmentForm()">Randevu al <i class="fas fa-calendar"></i></button>
+        </div>
+    </div>
+
+    <div id="appointment-form" class="appointment-form">
+        <h2 class="feature-title">Randevu al</h2>
+        <form id="booking-form" action="https://script.google.com/macros/s/AKfycbx5g_g6WSYeJT--tg-HbBItmdcUpDrqb2CttmTDzDDyF1PdNOkF48UWqJ0xZ5h9HG5p/exec" method="POST">
+  <input type="hidden" name="_subject" value="Yeni Randevu Talebi - Barber Shop">
+  <input type="hidden" name="_template" value="table">
+  <input type="hidden" name="_captcha" value="false">
+  
+  <div class="form-group">
+    <label for="name">Ad Soyad:</label>
+    <input type="text" id="name" name="isim" required>
+  </div>
+  <div class="form-group">
+    <label for="email">E-posta:</label>
+    <input type="email" id="email" name="eposta" required>
+  </div>
+  <div class="form-group">
+    <label for="phone">Telefon:</label>
+    <input type="tel" id="phone" name="telefon" required>
+  </div>
+  <div class="form-group">
+    <label for="usta">Usta:</label>
+    <select id="usta" name="usta" required>
+      <option value="">Seçiniz</option>
+      <option value="Baki">Baki Doğan </option>
+      <option value="Beytullah">Beytullah Doğan</option>
+    </select>
+  </div>
+  <div class="form-group">
+    <label for="service">Hizmet:</label>
+    <select id="service" name="hizmet" required>
+      <option value="">Seçiniz</option>
+      <option value="Saç Kesimi">Saç Kesimi </option>
+      <option value="Sakal Düzeltme">Sakal Düzeltme</option>
+      <option value="Tıraş">Saç Sakal</option>
+    </select>
+  </div>
+  <div class="form-group">
+    <label for="date">Tarih:</label>
+    <input type="date" id="date" name="tarih" required>
+  </div>
+  <div class="form-group">
+    <label for="time">Saat:</label>
+    <select id="time" name="saat" required>
+      <option value="">Seçiniz</option>
+      <!-- Saat seçenekleri JavaScript ile doldurulacak -->
+    </select>
+  </div>
+  <div class="form-group">
+    <label for="notes">Notlar:</label>
+    <textarea id="notes" name="notlar" rows="3"></textarea>
+  </div>
+  <div class="form-group">
+    <button type="submit">Randevu Al</button>
+  </div>
+</form>
+    </div>
+
+    <div class="features">
+        <h2 class="feature-title">BİZİ AYIRAN NE?</h2>
+        <p>Sadece saç kesmek mi?
+Yoksa sizin stilinizi, tarzınızı ve kendinize olan güveninizi ortaya çıkarmak mı?
+
+Biz farkımızı detaylarda gösteriyoruz:
+
+Yüz hatlarınıza özel kesimler
+
+Modern ve klasik stillerin ustaca birleşimi
+
+Rahatlatıcı ve keyifli berber deneyimi
+
+Bizi diğerlerinden ayıran, sadece makas değil; tarzınızı anlamamız ve ona hayat vermemizdir.</p>
+    </div>
+
+    <button class="toggle-btn" onclick="toggleGallery()">GALERİYİ GÖRÜNTÜLE <i class="fas fa-camera"></i></button>
+
+    <div id="gallery" class="gallery">
+        <img src="images/resim1.jfif" alt="Tradition">
+        <img src="images/resim2.jfif" alt="Handwerk">
+        <img src="images/resim3.jfif" alt="Styling">
+        <img src="images/resim4.jfif" alt="Rasur">
+        <img src="images/resim5.jfif" alt="Beratung">
+        <img src="images/resim6.jfif" alt="Atmosphäre">
+    </div>
+
+    <div class="contact-info">
+        <div class="contact-item">
+            <h3>TELEFON NUMARASI</h3>
+            <p>0546 477 22 06</p>
+        </div>
+        
+        <div class="contact-item">
+            <h3>İNSTAGRAM</h3>
+            <p>angora_erkek_kuaforu</p>
+        </div>
+        
+        <div class="contact-item">
+            <h3>E-MAIL</h3>
+            <p>angorabarbershop@gmail.com</p>
+        </div>
+        
+        
+        <div class="address">
+            <h3>ADRES</h3>
+            <p>MİSKET MAH.</p>
+            <p>626 SK.</p>
+            <p>Mamak/Ankara</p>
+        </div>
+    </div>
+    <!-- Google Maps Ekleme -->
+    <div class="map-container">
+        <h2 class="feature-title">BİZİ BURADA BULABİLİRSİNİZ</h2>
+        <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3059.7483804426106!2d32.9141729110835!3d39.92464678532428!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14d351ebdbc1ca99%3A0x59604e6492da851d!2sMisket%2C%20626.%20Sk%2C%2006470%20Mamak%2FAnkara!5e0!3m2!1str!2str!4v1757269577015!5m2!1str!2str" 
+            width="100%" 
+            height="400" 
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+    </div>
+
+    <footer>
+        <p>COPYRIGHT BY GRGNCREATİVES</p>
+        <div class="footer-links">
+            <a href="#">KONTAKT</a>
+            <a href="#">KÜNYE</a>
+            <a href="#">GİZLİLİK POLİTİKASI</a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
